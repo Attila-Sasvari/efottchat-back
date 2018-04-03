@@ -1,0 +1,22 @@
+{
+  "name": "efottchat",
+  "version": "2.0.0",
+  "description": "Backend server of Efott chatbot",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Attila Sasvari",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.9.x",
+    "npm": "> 5.x"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "watson-developer-cloud": "^3.2.1"
+  }
+}

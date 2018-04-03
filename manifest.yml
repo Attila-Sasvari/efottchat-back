@@ -1,0 +1,13 @@
+---
+applications:
+- name: efottchat-backend
+  host: efottchat
+  disk_quota: 256M
+  command: npm start
+  path: .
+  memory: 256M
+  instances: 1
+  services:
+  - efottbot
+  env:
+    NPM_CONFIG_PRODUCTION: true
