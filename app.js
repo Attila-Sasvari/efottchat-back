@@ -1,4 +1,3 @@
-const axios = require("axios");
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
@@ -44,6 +43,7 @@ function callAssistant(params) {
   return new Promise((resolve, reject) => {
     assistant.message({
         workspace_id: workspace_id,
+        context: params.context,
         input: { text: params.text }
       }, function(err, response) {
         if (err) {
